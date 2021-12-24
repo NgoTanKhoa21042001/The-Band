@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--viewport tối ưu kích thước khung nhìn trên mọi thiết bị-->
+    <title>Document</title>
+    <link rel="icon" href="https://scontent.fdad3-3.fna.fbcdn.net/v/t1.0-9/75341267_947466912295343_7946011650211971072_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=a4a2d7&_nc_ohc=41IfJzgzt5wAX8MkYZL&_nc_ht=scontent.fdad3-3.fna&oh=e1ba5bb227a2e41afe6c311ba70ac336&oe=6069E419" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+<body>
+    
+    <div id="main">
+        <div id="header">
+            <!--Begin : Nav-->
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li>
+                    <a href="#">
+                        More 
+                        <i class="nav-arrow-down fas fa-chevron-down"></i>
+                    </a>
+                   <ul class="subnav">
+                       <li><a href="#">Merchandise</a></li>
+                       <li><a href="#">Extras</a></li>
+                       <li><a href="#">Media</a></li>    
+                   </ul>
+                </li>
+            </ul>      <!-- Tạo ra thẻ ul có id là nav, trong nav có 5 thẻ con li, trong thẻ li có thẻ a để có thể nhấn vào đc. Cú pháp: ul#nav>li*5>a --> 
+            <!--begin : menu mobile -->
+            <div id="menu-mobile" class="mobile-menu">
+                <i class="menu-icon fas fa-bars"></i>
+            </div>
+            <!--begin : Search Button-->
+            <div class="search-button">
+                <form action="">
+                    <input type="text" placeholder="Search" required id="" class="search-btn">
+                    <i class="search-icon fas fa-search"></i>
+                </form>
+            </div>
+        </div>
+        <!-- Slider -->
+        <div id="slider">
+            <div class="text-content">
+                <h2 class="text-heading">New York</h2>
+                <div class="text-description">The atmosphere in New York is lorem ipsum.</div>
+            </div>
+        </div>
+        <div id="content">
+            <!--About section-->
+            <div id="band" class="content-section">
+                <h2 class="section-heading">Team 7</h2>
+                <p class="section-sub-heading">We love ninja</p>
+                <p class="about-text">
+                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="row members-list">
+                    <div class="s-col-full col col-third text-center">
+                        <p class="member-name">Uchiha Sasuke</p>
+                       <img src="https://i.pinimg.com/736x/0a/cc/de/0accdea2409adb26776e32241b897ccd.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="s-col-full col col-third text-center">
+                        <p class="member-name">Kakashi</p>
+                       <img src="https://i.pinimg.com/736x/9c/ca/7e/9cca7e5fecbc0f1abf3370722c3e8f99.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="s-col-full col col-third text-center">
+                        <p class="member-name">Sakura</p>
+                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSABEOtfsloWuagFAglKswsujCM3IZ2q0m64A&usqp=CAU" alt="Name" class="member-img">
+                    </div>
+                    <div class="s-col-full col col-third text-center">
+                        <p class="member-name">Sai</p>
+                       <img src="data:image/jpeg;base64,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" alt="Name" class="member-img">
+                    </div>
+                    <div class="s-col-full col col-third text-center">
+                        <p class="member-name">Naruto</p>
+                       <img src="https://coolthemestores.com/wp-content/uploads/2020/11/naruto-features.jpg" alt="Name" class="member-img">
+                    </div>
+                    
+                </div>
+            </div>
+             <!--tour section-->
+             <div id="tour" class="tour-section">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">TOUR DATES</h2>
+                    <p class="section-sub-heading text-white">Remember to book your tickets!</p>
+                    <!--Ticket List-->
+                    <ul class="ticket-list">
+                        <li>September <span class="sold-out">Sold out</span></li>
+                        <li>October <span class="sold-out">Sold out</span></li>
+                        <li>November <span class="quantity">3</span></li>
+                    </ul>
+                    <!--Place List-->
+                    <div class="row place-list">
+                        <div class="s-col-full col col-third">
+                            <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="New York" class="place-img img-js">
+                            <div class="place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button class="s-full-width place-buy-btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="s-col-full col col-third">
+                            <img src="https://www.w3schools.com/w3images/paris.jpg" alt="New York" class="place-img img-js">
+                            <div class="place-body">
+                                <h3 class="place-heading">Paris</h3>
+                                <p class="place-time">Fri 28 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="s-full-width place-buy-btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="s-col-full col col-third">
+                            <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="New York" class="place-img img-js">
+                            <div class="place-body">
+                                <h3 class="place-heading">San Francisco</h3>
+                                <p class="place-time">Fri 29 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="s-full-width place-buy-btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="s-col-full col col-third">
+                            <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="New York" class="place-img img-js">
+                            <div class="place-body">
+                                <h3 class="place-heading">San Francisco</h3>
+                                <p class="place-time">Fri 29 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="s-full-width place-buy-btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="s-col-full col col-third">
+                            <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="New York" class="place-img img-js">
+                            <div class="place-body">
+                                <h3 class="place-heading">San Francisco</h3>
+                                <p class="place-time">Fri 29 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="s-full-width place-buy-btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="s-col-full col col-third">
+                            <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="New York" class="place-img img-js">
+                            <div class="place-body">
+                                <h3 class="place-heading">San Francisco</h3>
+                                <p class="place-time">Fri 29 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="s-full-width place-buy-btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                         <!--Cho nền đen bao quanh cái place-->
+                    </div>
+                </div>
+             </div>
+            <!--Begin Contact section-->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">Mr_Khoa</h2>
+                <p class="section-sub-heading">Fan? Drop a note!</p>
+                <div class="row contact-content">
+                    <div class="col col-half s-col-full contact-info">
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>Chicago, US</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
+                        <p><i class="fa fa-bandcamp" aria-hidden="true"></i></p>
+                    </div>   <!--2 hàng col -->
+                    <div class="padding-left-right col col-half s-col-full">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half contact-form s-col-full">
+                                    <input type="text" name="" placeholder="Name" required id="" class="form-control"> <!--input:text.form-control -->
+                                </div>
+                                <div class="col col-half contact-form s-col-full s-mt-8">
+                                    <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full contact-form">
+                                    <input type="text" name="" placeholder="Message" id="" class="form-control">
+                                </div>
+                            </div>
+                            <input class="form-submit mt-16 s-full-width" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <!--End Contact section-->
+             <div class="map-section">   <!--Còn ở trong content vì nó có khoảng trắng phía dưới-->
+                 <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+                 <div class="gg-map">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d251637.95196238213!2d105.6189045!3d9.779349!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1624592641512!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                 </div>
+             </div>
+        </div>
+
+        <div id="footer">
+            <div class="social-lists">
+                <div class="socials-list">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-telegram-plane"></i></a>
+                  </div>
+                  <p class="copyright">Powered by <a href="">w3.css</a></p>
+            </div>
+        </div>
+    </div>
+            <!-- Ticket -->
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="close-container fas fa-times"></i>
+            </div>
+            <div class="modal-header">
+                <ion-icon name="bag" class="bag-container">
+                   
+                </ion-icon>
+                <span>Tickets</span>
+            </div>
+            <div class="modal-body">
+                <!-- Price -->
+                <label for="" class="modal-label">
+                    <ion-icon name="cart">
+                      
+                    </ion-icon>
+                    <span>Tickets, $15 per person</span>
+                </label>
+                <input type="text" name = "howmany" required id="howmany" class="modal-input" placeholder="How many?">
+                <!-- User -->
+                <label for="" class="modal-label">
+                    <ion-icon name="person">
+                        
+                    </ion-icon>
+                    <span>Send to</span>
+                </label>
+                <input type="email" name = "email" required id="email" class="modal-input" placeholder="Enter email">
+                <!-- Pay --> 
+                <button class="pay-btn pay-js__btn">
+                    Pay
+                    <i class="check-btn fas fa-check"></i>
+                </button>
+                <div class="modal-body__footer">
+                    <span>Need <a href="">help?</a></span>
+                </div>
+            </div>
+            <!-- footer -->
+        </div>
+    </div>
+<!-- SCRIPT -->
+
+<script>
+    
+    // BUY BTN
+    const buyBtns = document.querySelectorAll('.js-buy-ticket');
+    const closeBtn = document.querySelector('.js-modal-close');
+    const modal = document.querySelector('.js-modal');
+    const modalContainer = document.querySelector('.js-modal-container');
+    //  Tạo hàm để thực hiện hành vi
+    function openModal() {
+        modal.classList.add('open')
+    }
+
+    function closeModal() {
+        modal.classList.remove('open');
+    }
+
+    //  Lặp qua từng nút
+
+    for(const buyBtn of buyBtns) {
+        buyBtn.addEventListener('click',openModal);
+    }
+    //  Close the modal
+    closeBtn.addEventListener('click',closeModal);
+    //  ấn bên ngoài sẽ tắt
+    modal.addEventListener('click', closeModal);
+
+    //  Ngăn sự kiện nổi bọt
+    modalContainer.addEventListener('click',function(e) {
+        e.stopPropagation()
+    })
+    // END BUY BTN
+
+    //  Phần điền formatted
+
+    const payBtn = document.querySelector('.pay-js__btn');
+
+    payBtn.onclick = function validateForm() {
+        const howMany = document.getElementById('howmany').value;
+        const email = document.getElementById('email').value;
+
+        // if(howMany = "" && email == "") {
+        //     alert('Please enter how many and your email');
+        // }
+
+        if(howMany == "" && typeof howMany == number) {
+            alert('Please enter how many you want!');
+            return false;
+        }
+        if (email == "") {
+            alert('Please enter email!');
+            return false;
+        }
+        
+        alert('Pay Successfully!');
+        return true;
+
+    }
+    //  Phần kết thúc formatted
+
+    //  Phần menu bar
+    var header = document.getElementById('header');
+
+    var menuBar = document.getElementById('menu-mobile');
+
+    var heightMenu = header.clientHeight;
+
+    //   Đóng mở mobile menu
+    menuBar.onclick = function() {
+        var isClose = header.clientHeight === heightMenu;  // đang đóng thi bằng với chiều cao header
+        if(isClose) {
+            header.style.height = 'auto'; // Tự động 
+        }
+        else {
+            header.style.height = null; 
+        }
+    }
+
+    // Tự động đóng khi chọn menuBar
+
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+    //  click vào thẻ a thì đóng menu
+    for(var i = 0; i < menuItems.length; i++) {
+    var menuItem = menuItems[i];  // Lấy ra từng thằng trong ds đó
+    menuItem.onclick = function() {
+        header.style.height = null; 
+    
+    }
+    }
+
+</script>
+<!-- SCRIPT -->
+</body>
+</html>
+

@@ -1,0 +1,4 @@
+
+Thủ thật VScode 
+
+ctrl + shift + K : xóa 1 dòng

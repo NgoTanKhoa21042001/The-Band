@@ -1,0 +1,136 @@
+/* PC */
+@media(min-width: 64em) {
+
+}
+
+/* Tablet and mobile */
+@media(max-width: 63.9375em) {
+#nav {
+    font-size: 32px;
+}
+#nav li a {
+    font-size: 17px;
+}
+.place-buy-btn {
+    padding: 13px 16px;
+}
+.contact-form .form-control {
+    padding: 18px;
+}
+.contact-info {
+    line-height: 1.9;
+    padding-left: 15px;
+}
+.form-submit {
+    height: 42px;
+}
+.copyright {
+    padding: 15px;
+}
+.socials-list a {
+    margin: 0 8px;
+}
+}
+
+/* Tablet */
+@media(min-width: 46.25em) and (max-width: 63.9375em) {
+    .contact-info {
+        font-size: 22px;
+        line-height: 1.9;
+    }
+    #nav .subnav a {
+        padding: 5px 12px;
+        font-size: 20px;
+    }
+    .socials-list a{
+        font-size: 35px;
+        margin: 0 10px;
+    }
+    .copyright {
+        font-size: 23px;
+    }
+}
+/* Mobile */
+@media(max-width: 46.1875em) {
+
+.s-full-width ,
+.s-col-full {
+    width: 100% !important;
+}
+
+.col-third {
+        margin-bottom: 20px !important;
+    }
+.s-mt-8 {
+    margin-top: 8px !important;
+}
+
+.gg-map {
+    margin: 20px 15px 0 8px;
+    width: 97%;
+}
+/* header */
+#header {
+    overflow: hidden;
+}
+#header .mobile-menu {
+    display: block;
+}
+#header .search-button{
+    display: none;
+        
+} 
+  /* Nav */
+#nav {
+    display: block;
+}
+#nav > li{
+    display:block; /*Xếp hàng ngang*/
+}
+
+#nav .subnav {
+    position: initial;  /*Giá trị mặc định. bỏ qua giá trị # */
+    background-color: rgb(87, 85, 85);
+}
+
+#nav .subnav a {
+    color: #fff;
+    padding-left: 50px;
+}
+/* Content */
+#content .members-list {
+    padding-top: 52px;
+}
+#content .member-item {
+    margin-top: 30px;
+    width: 100%;
+}
+#content .member-img {
+    width: 60%;
+}
+#content .member-name {
+    font-size: 16px;
+    margin-top: 11px;
+}
+.padding-left-right {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.contact-form .form-control {
+    padding: 13px;
+}
+.font-size {
+    font-size:20px;
+    height: 42px;
+}
+}
+
+
+/* Tablet fix */
+
+@media (max-width: 804px) {
+    .search-button {
+        top: -47px;
+        position: relative;
+    }
+}
